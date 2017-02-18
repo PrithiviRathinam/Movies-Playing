@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The placeholder image incase the image is not present for the movie -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="120dp"
+                android:width="120dp"/>
+            <solid android:color="@color/placeholder_bg"/>
+     </shape>
+    </item>
+
+<item>
+<bitmap android:gravity="center" android:src="@drawable/ic_filmstrip_white_48dp" />
+        </item>
+    </layer-list>

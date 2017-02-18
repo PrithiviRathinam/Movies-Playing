@@ -1,4 +1,27 @@
 <resources>
-    <string name="app_name">Beno Movies</string>
+    <string name="app_name">Beno Movies Guide</string>
     <string name="title_screen">Now Playing</string>
+    <string name="loading_footer_text">Please Wait!</string>
+    <string name="movie_popularity_string">Popularity :</string>
+    <string name="no_overview">The plot is currently unavailable.</string>
+    <string name="final_footer_text">Refresh!</string>
+    <string name="no_internet">Sorry, Can\'t fetch data. Please Check your connection!</string>
+    <string name="not_available">NA.</string>
+    <string name="overview_title">Overview :</string>
+    <string name="genre_title">Genre :</string>
+    <string name="synopsis">Synopsis :</string>
+    <string name="production_string">Produced By:</string>
+    <string name="release">Released</string>
+    <string name="production_string_country">Country of Origin:</string>
+
+    <string name="runtime_title_string">Runtime:</string>
+
+    <string name="budget_string">Budget:</string>
+    <string name="tagline_string">Tagline:</string>
+    <string name="homepage_string">Homepage:</string>
+
+    <string name="revenue_string">Box Office:</string>
+    <string name="vote_count_string">Vote Count</string>
+    <string name="vote_average_string">Vote Average</string>
+    <string name="popularity_circle_string">Popularity</string>
 </resources>

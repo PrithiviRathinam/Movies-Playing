@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#00796B</color>
+    <color name="colorPrimaryDark">#004D40</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+    <!-- Background Color for the App -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Background Color for the Now Playing Items -->
+    <color name="list_item_background">#9FA8DA</color>
+
+    <!-- Important but small info -->
+    <color name="MovieReleaseDateColor">#B4BAC0</color>
+
+    <!-- for Popularity greater than 80 -->
+    <color name="pop1">#10CAC9</color>
+
+    <!-- for popularity between 50 - 80 -->
+    <color name="pop2">#FC6644</color>
+
+    <!-- for popularity below 50 -->
+    <color name="pop3">#C03823</color>
+
+    <color name="details_bg">#7E57C2</color>
+
+    <!-- placeholder image background -->
+
+    <color name="placeholder_bg">#BDBDBD</color>
+
+    <color name="stat_color">#FF5722</color>
+
+    <!-- couple of colors for the list items -->
+    <color name="ListColor">#009688</color>
+
+    <color name="white_for_text">#FFFFFF</color>
+
+    <color name="ListBg">#4A148C</color>
+
+    <color name="status_color">#2196F3</color>
+
+    <color name="genre_bg">#8BC34A</color>
+
+    <color name="status_change">#D50000</color>
 </resources>

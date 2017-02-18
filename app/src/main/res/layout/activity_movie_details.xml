@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/details_bg"
+    android:orientation="vertical"
+    tools:context="com.pritz.android.benomovies.MovieDetailsActivity">
+<LinearLayout
+    android:id="@+id/details_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/details_bg"
+    android:orientation="vertical"
+   >
+
+
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+
+
+        android:background="@color/ListColor"
+        >
+
+        <ImageView
+                android:id="@+id/movie_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:text="Image Goes here!"
+
+                tools:src="@drawable/ic_filmstrip_black_48dp"
+            />
+
+        <TextView
+            android:id="@+id/movie_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:text="Deadpool"
+            style="@style/ListTheme"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"
+            android:layout_gravity="center"
+            android:gravity="center|left|bottom"
+
+            android:paddingLeft="5dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/movie_status_id"
+        android:background="@color/status_color">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/ListTheme"
+            android:id="@+id/status_text"
+            tools:text="Get Ready!!"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+
+        >
+
+
+        <TextView
+            android:text="@string/synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/synopsis"
+            android:textStyle="bold"
+            style="@style/ListTheme"
+            android:layout_weight="1" />
+
+        <TextView
+            android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/overview_text"
+
+            style="@style/ListTheme"
+                />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            >
+        <TextView
+            android:id="@+id/movie_tag_line_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListTheme"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="@string/tagline_string"
+            tools:text="Tagline"
+            />
+        <TextView
+            android:id="@+id/movie_tag_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListTheme"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+            tools:text="this is what you get!!"
+            />
+            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:id="@+id/homepage_text"
+
+            android:textStyle="normal"
+            android:layout_height="wrap_content"
+            tools:text="www.deadpool.com"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="5dp">
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+            android:gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListTheme"
+            android:textStyle="bold"
+            android:text="@string/runtime_title_string"
+            tools:text="runtime:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/run_time"
+            android:paddingLeft="2dp"
+            style="@style/ListTheme"
+            tools:text="136 min"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:gravity="left"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/budget_string"
+            style="@style/ListTheme"
+            android:textStyle="bold"
+            tools:text="budget:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            style="@style/ListTheme"
+            android:id="@+id/budget" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:paddingTop="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/revenue_string"
+        style="@style/ListTheme"
+        android:textStyle="bold"
+        tools:text="@string/revenue_string"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:id="@+id/revenue_id"
+        style="@style/ListTheme"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+    <TextView
+        android:text="@string/genre_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genre_title"
+        android:textStyle="bold"
+
+        style="@style/ListTheme"/>
+
+    <TextView
+        tools:text="TextView"
+        android:layout_marginLeft="10dp"
+        android:padding="4dp"
+        android:visibility="invisible"
+        android:background="@drawable/genre_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genre_1"
+        style="@style/ListTheme"/>
+
+    <TextView
+        tools:text="TextView"
+        android:layout_marginLeft="10dp"
+        android:padding="4dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/genre_rectangle"
+        android:id="@+id/genre_2"
+        style="@style/ListTheme"/>
+        <TextView
+            tools:text="TextView"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/genre_rectangle"
+            android:id="@+id/genre_3"
+            style="@style/ListTheme"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/production_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ListTheme"
+                android:textStyle="bold"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:id="@+id/prod_value"
+                style="@style/ListTheme"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/production_string_country"
+                style="@style/ListTheme"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/prod_cont_value"
+                style="@style/ListTheme"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fullscreen_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/ListTheme"
+            android:text="@string/vote_count_string"
+            android:layout_height="wrap_content"
+            tools:text="left"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/ListTheme"
+            android:text="@string/vote_average_string"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            tools:text="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/ListTheme"
+            android:gravity="center"
+            android:text="@string/popularity_circle_string"
+            android:layout_height="wrap_content"
+            tools:text="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:id="@+id/circle_id"
+        android:visibility="invisible"
+        >
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+            <TextView
+
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+
+                android:id="@+id/vote_count_1"
+                android:textSize="18sp"
+                android:background="@drawable/stat_circle"
+                style="@style/ListTheme"
+                android:gravity="center"
+                tools:text="54"
+                />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+            <TextView
+
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/vote_average"
+
+                android:textSize="28sp"
+                android:background="@drawable/stat_circle"
+                style="@style/ListTheme"
+                android:gravity="center"
+                tools:text="54"
+                />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+            <TextView
+
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/popularity_rating"
+                android:textSize="24sp"
+                android:background="@drawable/stat_circle"
+                style="@style/ListTheme"
+                android:gravity="center"
+
+                tools:text="54"
+                />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

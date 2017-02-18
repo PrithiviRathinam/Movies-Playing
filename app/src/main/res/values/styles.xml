@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ListTheme">
+
+        <item name="android:textColor">@color/white_for_text</item>
+    </style>
+
 </resources>
